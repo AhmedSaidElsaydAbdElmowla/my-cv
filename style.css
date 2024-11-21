@@ -1,0 +1,133 @@
+/* إعادة تعيين بعض التنسيقات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحديد خلفية ولون النص */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* خلفية خفيفة */
+    color: #080101;
+    direction: rtl;
+    text-align: right;
+}
+
+/* تصميم الحاوية الرئيسية */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* إضافة تأثير الظل */
+}
+
+/* رأس السيرة الذاتية */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* اسم الشخص والمسمى الوظيفي */
+header h1 {
+    font-size: 2.5rem;
+    color: #080101;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: black; /* لون لافندر */
+}
+
+/* تصميم الأقسام باستخدام Grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* تصميم كل قسم */
+section {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تخصيص خلفيات ملونة لكل قسم */
+.info {
+    background-color: #9caaf8; /* أخضر فاتح */
+}
+
+.education {
+    background-color: #2d42b4; /* أزرق فاتح */
+}
+
+.experience {
+    background-color: #2d42b4; /* بنفسجي فاتح */
+}
+
+.skills {
+    background-color: #2d42b4; /* برتقالي فاتح */
+}
+
+/* عنوان الأقسام */
+h2 {
+    font-size: 1.8rem;
+    color: #080202;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #9370DB; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق القوائم */
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* تنسيق الفوتر */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+footer strong {
+    color: #9370DB; /* لون لافندر */
+}
+
+/* إضافة تأثيرات لتفاعل الروابط */
+a {
+    text-decoration: none;
+    color: #9370DB;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4b4b4b; /* تغيير اللون عند المرور */
+}
